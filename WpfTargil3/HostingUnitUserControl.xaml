@@ -12,6 +12,10 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="tbUnitName" Text="{Binding Path=Unitname}" />
+        <TextBox x:Name="tbUnitName" Text="{Binding Path=Unitname}" Margin="20,60,66.667,348" FontFamily="Tahoma" FontSize="20" />
+        <Label Content="מספר חדרים" HorizontalAlignment="Left" Margin="124,206,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.627,4.314" FontFamily="Tahoma" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="39" Margin="35,199,0,0" TextWrapping="Wrap" Text="{Binding Path=Rooms}" VerticalAlignment="Top" Width="60"/>
+        <CheckBox Content="בריכה" HorizontalAlignment="Left" Margin="35,288,0,0" VerticalAlignment="Center" IsChecked=
+"{Binding Path=IsSwimingPool}" FontFamily="Tahoma" FontSize="20"/>
     </Grid>
 </UserControl>
